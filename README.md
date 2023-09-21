@@ -57,13 +57,13 @@ Next, preferably after the first Virtual Machine has finished deploying to avoid
 <a href="https://imgur.com/L6SKTUc"><img src="https://i.imgur.com/L6SKTUc.png" title="source: imgur.com" /></a>
 </p>
 <p>
-In the Networking section, be sure to put Client-1 on the same Virtual Network as DC-1.
+In the Networking section, be sure to put Client-1 on the same Virtual Network as DC-1. Next, Review + Create, just like before.
 </p>
 <br />
 
 <h3></h3>
 <p>
-<image please>
+<a href="https://imgur.com/EEgzPkT"><img src="https://i.imgur.com/EEgzPkT.png" title="source: imgur.com" /></a>
 </p>
 <p>
 explain
