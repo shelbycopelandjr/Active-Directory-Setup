@@ -134,6 +134,12 @@ In this windows, select Inbound Rules in the left panel. Next, you want to find 
 Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In), one for Private and one for domain. In this picture, I used the sort tabs to separate the rules by Protocol. You'll be looking for ICMPv4.
 Once you locate them, enable them, either by clicking on them and selecting Enable Rule on the right side panel or by right clicking them and selecting Enable Rule.
 </p>
+<p>
+<a href="https://imgur.com/t0B3k03"><img src="https://i.imgur.com/t0B3k03.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Next, going back to Client-1, if all went as planned, Command Prompt should have switched from showing "Request Timed Out" to an actual reply from DC-1 for the pings. This is our evidence thats DC-1 and Client-1 are communicating. Press Ctrl+C to stop the pings.
+</p>
 <br />
 
 <h3></h3>
