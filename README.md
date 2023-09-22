@@ -142,12 +142,15 @@ Next, going back to Client-1, if all went as planned, Command Prompt should have
 </p>
 <br />
 
-<h3></h3>
+<h3>3. Install and Setup Active Directory</h3>
 <p>
-<image please>
+Now that the VMs are talking it's time to install Active Directory.
 </p>
 <p>
-explain
+<a href="https://imgur.com/iNf5IRv"><img src="https://i.imgur.com/iNf5IRv.png" title="source: imgur.com" /></a>
+</p>
+<p>
+On the DC-1 VM, access the Server Manager. Usually, this pops up on the screen when logging in but you should be able to open it from the Start Menu.
 </p>
 <br />
 
