@@ -164,11 +164,47 @@ When you get to the part of choosing server roles, check the box next to Active 
 <p>
 Once you come to the confirmation screen, read over the information box to verify it is what you're looking to do and, if all is well, click the Install button.
 </p>
+<p>
+<a href="https://imgur.com/Wc1lU4n"><img src="https://i.imgur.com/Wc1lU4n.png" title="source: imgur.com" /></a>
+</p>
+<p>
+When that is finished installing, you'll notice on the Server Manager Dashboard there is a yellow triangle trying to get your attention in the top left next to the flag. Click the flag and select the option that says "Promote this server to a domain controller".
+</p>
+<p>
+<a href="https://imgur.com/sd7jFKn"><img src="https://i.imgur.com/sd7jFKn.png" title="source: imgur.com" /></a>
+</p>
+<p>
+This should open the Deployment Configuration window. Here, select the "Add a new forest" option and choose a name for your domain. Then, click the Next button. Be sure to remember the password you use on the next screen in case you need it for future use.
+</p>
+<p>
+  <a href="https://imgur.com/Wlskgij"><img src="https://i.imgur.com/Wlskgij.png" title="source: imgur.com" /></a>
+</p>
+<p>
+After a while of the VM doing it's background work and you clicking the next button you'll come to this screen. The VM should, after a while, tell you that all prerequisites have been met. Click the Install button. Once it installs and finishes setting up the server as a domain controller, it will automatically restart. This will also kick you out of the Remote Desktop connection. This is normal. You cannot connect to a computer that isn't "on", so we wait a little while and reestablish our Remote Desktop connection. There is a chance the PUBLIC IP of the DC-1 VM could change, so that's something to look out for.
+</p>
+<p>
+<a href="https://imgur.com/PMf99eq"><img src="https://i.imgur.com/PMf99eq.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Also, the VM is now officially a domain controller, so instead of logging into DC-1 like we may have down previously, we now need to log into the domain itself using your username @ whatever your domain name is. (ex. LetmaPPolgo@mydomain.com)
+</p>
+<p>
+<a href="https://imgur.com/86ohFTb"><img src="https://i.imgur.com/86ohFTb.png" title="source: imgur.com" /></a>
+</p>
+<p>
+To do this, you can log in as you normally would but when you come to credentials window, click the "More choices" option and choose "Use a different account".
+</p>
+<p>
+<a href="https://imgur.com/xEhXQik"><img src="https://i.imgur.com/xEhXQik.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Then you will enter your username @ domain name combo (ex. LetmaPPolgo@mydomain.com) followed by the same password you've already been using. This should get you back into the domain controller.
+</p>
 <br />
 
-<h3></h3>
+<h3>4. Configuring Active Directory For Use</h3>
 <p>
-<image please>
+<a href="https://imgur.com/ToDCbG8"><img src="https://i.imgur.com/ToDCbG8.png" title="source: imgur.com" /></a>
 </p>
 <p>
 explain
