@@ -150,7 +150,19 @@ Now that the VMs are talking it's time to install Active Directory.
 <a href="https://imgur.com/iNf5IRv"><img src="https://i.imgur.com/iNf5IRv.png" title="source: imgur.com" /></a>
 </p>
 <p>
-On the DC-1 VM, access the Server Manager. Usually, this pops up on the screen when logging in but you should be able to open it from the Start Menu.
+On the DC-1 VM, access the Server Manager. Usually, this pops up on the screen when logging in but you should be able to open it from the Start Menu. Once there, click the "Add roles and features" option.
+</p>
+<p>
+<a href="https://imgur.com/2mVNWzT"><img src="https://i.imgur.com/2mVNWzT.png" title="source: imgur.com" /></a>
+</p>
+<p>
+When you get to the part of choosing server roles, check the box next to Active Directory Domain Services, then click the Add Features button in the bottom right.
+</p>
+<p>
+<a href="https://imgur.com/XVPyLaj"><img src="https://i.imgur.com/XVPyLaj.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Once you come to the confirmation screen, read over the information box to verify it is what you're looking to do and, if all is well, click the Install button.
 </p>
 <br />
 
