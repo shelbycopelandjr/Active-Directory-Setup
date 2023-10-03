@@ -207,7 +207,13 @@ Then you will enter your username @ domain name combo (ex. LetmaPPolgo@mydomain.
 <a href="https://imgur.com/ToDCbG8"><img src="https://i.imgur.com/ToDCbG8.png" title="source: imgur.com" /></a>
 </p>
 <p>
-explain
+Once you're back in the system and at the Server Manager Dashboard, you now need to make some users and attach some computers to the domain. In the Tools menu in the top left of the window select the Active Directory Users and Computers option.
+</p>
+<p>
+  <a href="https://imgur.com/hNHN9Ho"><img src="https://i.imgur.com/hNHN9Ho.png" title="source: imgur.com" /></a>
+</p>
+<p>
+
 </p>
 <br />
 
