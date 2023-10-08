@@ -213,16 +213,79 @@ Once you're back in the system and at the Server Manager Dashboard, you now need
   <a href="https://imgur.com/hNHN9Ho"><img src="https://i.imgur.com/hNHN9Ho.png" title="source: imgur.com" /></a>
 </p>
 <p>
-
+For this project, we created 2 organizational units (folders essentially) within our domain. To do this, click on your domain's name in the left panel. From there you can click the folder icon in the hotbar furthest to the right or you can right-click the domain, go to create new, and choose organizational unit from the drop down. We ended up making one for EMPLOYEES and one for ADMINS.
+</p>
+<p>
+<a href="https://imgur.com/0IJVAzY"><img src="https://i.imgur.com/0IJVAzY.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Now, we want to create an admin account. This is so that there is an account on the system with the necessary priveleges to operate throughout the network. In the ADMINS organizational unit, create a new user either by clicking the icon indicated or by right clicing the ADMINS OU, going to Create New, and choosing user from the drop down. In this window, fill in all the necessary information and make a note of of the logon name and password. We'll need that later. 
+</p>
+<p>
+<a href="https://imgur.com/ocZgmBm"><img src="https://i.imgur.com/ocZgmBm.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Next, right click on the new user and select Properties.
+</p>
+<p>
+<a href="https://imgur.com/NCm8nC4"><img src="https://i.imgur.com/NCm8nC4.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Click the "Member Of" tab.
+</p>
+<p>
+<a href="https://imgur.com/GAIFOmA"><img src="https://i.imgur.com/GAIFOmA.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Click the Add button.
+</p>
+<p>
+<a href="https://imgur.com/Z6S1WEo"><img src="https://i.imgur.com/Z6S1WEo.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Type "Domain Admins" in the text field. You can click the Check Names button to make sure it is a valid entry. The click OK. Now we have our Admin User set up for the next phase.
 </p>
 <br />
 
-<h3></h3>
+<h3>Joining Computers to the Network</h3>
 <p>
-<image please>
+Now we need to put computers on the network. This is why we needed the Client-1 VM for this project.
 </p>
 <p>
-explain
+<a href="https://imgur.com/skzZs9o"><img src="https://i.imgur.com/skzZs9o.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Back in Microsoft Azure, we now need to navigate to the Client-1 VM and select Networking from the left panel.
+</p>
+<p>
+<a href="https://imgur.com/D1Nh24p"><img src="https://i.imgur.com/D1Nh24p.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Click the Network Interface link.
+</p>
+<p>
+<a href="https://imgur.com/gE6vCPB"><img src="https://i.imgur.com/gE6vCPB.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Select the DNS Servers setting from the left panel.
+</p>
+<p>
+<a href="https://imgur.com/9GIj3SF"><img src="https://i.imgur.com/9GIj3SF.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Here in the DNS Server settings, click the Custom option and for the DNS Server type in the PRIVATE IP address from *DC-1*. Remember to click the Save button when finished.
+</p>
+<p>
+<a href="https://imgur.com/Uz88tKw"><img src="https://i.imgur.com/Uz88tKw.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Then, back in the Client-1 VM's overview page, restart the VM. If you are still connected to it using Remote Desktop, the connection will be cut. Just wait for Client-1 to restart and log back in as normal.
+</p>
+<p>
+<a href="https://imgur.com/3UPma3k"><img src="https://i.imgur.com/3UPma3k.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Once logged back into Client-1, open up Control Panel from the Start menu. From there, select System and Security, then select the System setting.
 </p>
 <br />
 
