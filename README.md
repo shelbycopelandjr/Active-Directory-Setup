@@ -247,7 +247,7 @@ Type "Domain Admins" in the text field. You can click the Check Names button to 
 </p>
 <br />
 
-<h3>Joining Computers to the Network</h3>
+<h3>5. Joining Computers to the Network</h3>
 <p>
 Now we need to put computers on the network. This is why we needed the Client-1 VM for this project.
 </p>
@@ -287,22 +287,78 @@ Then, back in the Client-1 VM's overview page, restart the VM. If you are still 
 <p>
 Once logged back into Client-1, open up Control Panel from the Start menu. From there, select System and Security, then select the System setting.
 </p>
+<p>
+<a href="https://imgur.com/U4287qf"><img src="https://i.imgur.com/U4287qf.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Next, click on the option that says *Rename this PC (advanced)* from the right hand panel.
+</p>
+<p>
+<a href="https://imgur.com/T9iTD6p"><img src="https://i.imgur.com/T9iTD6p.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Then, click the Change button.
+</p>
+<p>
+<a href="https://imgur.com/HuoU5d8"><img src="https://i.imgur.com/HuoU5d8.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Change the "Member of" option to Domain and fill in the text box with the name of your domain. Click OK.
+</p>
+<p>
+<a href="https://imgur.com/z1F32hy"><img src="https://i.imgur.com/z1F32hy.png" title="source: imgur.com" /></a>
+</p>
+<p>
+When this window pops up, put in the user name and password of the *ADMIN YOU CREATED ON DC-1*. 
+</p>
+<p>
+<a href="https://imgur.com/jMamAN5"><img src="https://i.imgur.com/jMamAN5.png" title="source: imgur.com" /></a>
+</p>
+<p>
+If all goes well, this little confimation should appear on the screen. It may show up *behind* other windows, so don't be surpised if you have to minimize some things to see it.
+</p>
 <br />
 
-<h3></h3>
+<h3>6. Setting Up Remote Desktop For Non-Admins</h3>
 <p>
-<image please>
+Now we need anyone in the organization to be able to use this computer to connect the network.
 </p>
 <p>
-explain
+<a href="https://imgur.com/JeaNPnt"><img src="https://i.imgur.com/JeaNPnt.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Now that Client-1 is connected to the domain, log in to Client-1 as *the ADMIN OF DC-1*. From there, go to the Control panel via the Start Menu, click on System and Security, and click the System setting.
+</p>
+<p>
+<a href="https://imgur.com/jW8JLhc"><img src="https://i.imgur.com/jW8JLhc.png" title="source: imgur.com" /></a>
+</p>
+<p>
+In this window, click the Remote Desktop option on either side.
+</p>
+<p>
+<a href="https://imgur.com/3eh0TyJ"><img src="https://i.imgur.com/3eh0TyJ.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Click the option that says "Select users that can remotely access this PC".
+</p>
+<p>
+<a href="https://imgur.com/yhJDSgf"><img src="https://i.imgur.com/yhJDSgf.png" title="source: imgur.com" /></a>
+</p>
+<p>
+This should look familiar. Click the Add button.
+</p>
+<p>
+<a href="https://imgur.com/zcaiR39"><img src="https://i.imgur.com/zcaiR39.png" title="source: imgur.com" /></a>
+</p>
+<p>
+In the text field, type "Domain Users". Use the Check Names button on the right to validate if necessary.
+
+And that's that. Now any user added into DC-1 should be able to access Client-1 remotely.
 </p>
 <br />
 
-<h3></h3>
+<h3>DONE</h3>
 <p>
-<image please>
-</p>
-<p>
-explain
+AWESOME. This should prove to be a solid basis to build from. I hope this little project was helpful.
 </p>
 <br />
