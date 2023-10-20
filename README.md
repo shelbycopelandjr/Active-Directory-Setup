@@ -28,8 +28,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <h3> 1. Creating Microsoft Azure Virtual Machines</h3>
-<p>
-<a href="https://imgur.com/dBVwKID"><img src="https://i.imgur.com/dBVwKID.png" title="source: imgur.com" /></a>
+<p><a href="https://imgur.com/k5Geu9H"><img src="https://i.imgur.com/k5Geu9H.png" title="source: imgur.com" /></a>
 </p>
 <p>
 In Microsoft Azure, provided you have an active subscription, search "Virtual Machines" and click on the corresponding link. Once there, we need to create our Domain Controller (DC-1). Create a new resource group and take note of the name. We can just use DC-1 for the name of our Domain Controller. As for the region, take note of which region and zone you choose. For security type, I personally have has issues doing this when set to anything other than "Standard" so I recommend that's where we set it. For the image, we'll be using Windows Server 2022.
